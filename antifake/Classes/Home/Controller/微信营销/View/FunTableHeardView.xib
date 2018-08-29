@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FunTableHeardView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uet-B8-SSH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aP7-9C-ITv">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="j6l-c2-E4g"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obh-Op-QC2">
+                            <rect key="frame" x="0.0" y="49.5" width="375" height="0.5"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="Bdq-Ka-sjw"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4V-LC-eG6">
+                            <rect key="frame" x="15" y="16.5" width="11" height="17"/>
+                            <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ooU-It-FXx">
+                            <rect key="frame" x="348" y="16" width="12" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="CtG-Ja-SRw"/>
+                                <constraint firstAttribute="width" constant="12" id="uI2-bP-Vd4"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPs-JU-G41">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qPs-JU-G41" firstAttribute="top" secondItem="uet-B8-SSH" secondAttribute="top" id="CZ5-bf-Bzf"/>
+                        <constraint firstItem="obh-Op-QC2" firstAttribute="leading" secondItem="uet-B8-SSH" secondAttribute="leading" id="Cio-X5-5gX"/>
+                        <constraint firstItem="aP7-9C-ITv" firstAttribute="top" secondItem="uet-B8-SSH" secondAttribute="top" id="DOS-dM-Ov5"/>
+                        <constraint firstItem="w4V-LC-eG6" firstAttribute="leading" secondItem="uet-B8-SSH" secondAttribute="leading" constant="15" id="Eqt-ds-i2D"/>
+                        <constraint firstItem="aP7-9C-ITv" firstAttribute="leading" secondItem="uet-B8-SSH" secondAttribute="leading" id="L93-Ad-5gM"/>
+                        <constraint firstAttribute="trailing" secondItem="obh-Op-QC2" secondAttribute="trailing" id="LuB-wp-GC2"/>
+                        <constraint firstItem="ooU-It-FXx" firstAttribute="centerY" secondItem="uet-B8-SSH" secondAttribute="centerY" id="Qr4-yU-K41"/>
+                        <constraint firstAttribute="bottom" secondItem="qPs-JU-G41" secondAttribute="bottom" id="QyW-BS-f60"/>
+                        <constraint firstAttribute="trailing" secondItem="qPs-JU-G41" secondAttribute="trailing" id="Tvk-0a-wZC"/>
+                        <constraint firstAttribute="trailing" secondItem="aP7-9C-ITv" secondAttribute="trailing" id="YNi-So-i18"/>
+                        <constraint firstAttribute="height" constant="50" id="bpU-cE-KII"/>
+                        <constraint firstItem="qPs-JU-G41" firstAttribute="leading" secondItem="uet-B8-SSH" secondAttribute="leading" id="gPU-dW-Ny4"/>
+                        <constraint firstAttribute="bottom" secondItem="obh-Op-QC2" secondAttribute="bottom" id="h2Z-xd-KHm"/>
+                        <constraint firstAttribute="trailing" secondItem="ooU-It-FXx" secondAttribute="trailing" constant="15" id="r9B-xW-R70"/>
+                        <constraint firstItem="w4V-LC-eG6" firstAttribute="centerY" secondItem="uet-B8-SSH" secondAttribute="centerY" id="wMt-ed-Hxq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uet-B8-SSH" secondAttribute="trailing" id="7Yl-FD-c1q"/>
+                <constraint firstItem="uet-B8-SSH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fKi-B5-Qar"/>
+                <constraint firstItem="uet-B8-SSH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hz2-k1-ZXo"/>
+                <constraint firstAttribute="bottom" secondItem="uet-B8-SSH" secondAttribute="bottom" id="zD7-4o-FGW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="seationBtn" destination="qPs-JU-G41" id="M5D-gq-NTk"/>
+                <outlet property="titleLabel" destination="w4V-LC-eG6" id="hpb-dk-aY3"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="-227"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="19" height="33"/>
+    </resources>
+</document>

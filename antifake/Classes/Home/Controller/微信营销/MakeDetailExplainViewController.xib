@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MakeDetailExplainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1292"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjX-mM-hIh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1292"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-MC-nFE">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1134"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WX_detail1" translatesAutoresizingMaskIntoConstraints="NO" id="fA9-MZ-amW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="378"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="fA9-MZ-amW" secondAttribute="height" multiplier="1242:1252" id="tnq-v4-G4I"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WX_detail2" translatesAutoresizingMaskIntoConstraints="NO" id="xt8-FB-SVS">
+                                    <rect key="frame" x="0.0" y="378" width="375" height="378"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="xt8-FB-SVS" secondAttribute="height" multiplier="1242:1252" id="xuw-L9-12W"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WX_detail3" translatesAutoresizingMaskIntoConstraints="NO" id="T61-MX-87z">
+                                    <rect key="frame" x="0.0" y="756" width="375" height="378"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="T61-MX-87z" secondAttribute="height" multiplier="1242:1252" id="hdu-3r-aID"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="xt8-FB-SVS" secondAttribute="trailing" id="1Da-hZ-VhH"/>
+                                <constraint firstAttribute="bottom" secondItem="T61-MX-87z" secondAttribute="bottom" id="2wQ-jr-1se"/>
+                                <constraint firstItem="xt8-FB-SVS" firstAttribute="leading" secondItem="bdh-MC-nFE" secondAttribute="leading" id="Cdf-v3-ybz"/>
+                                <constraint firstItem="xt8-FB-SVS" firstAttribute="top" secondItem="fA9-MZ-amW" secondAttribute="bottom" id="LGy-fv-tOa"/>
+                                <constraint firstAttribute="trailing" secondItem="T61-MX-87z" secondAttribute="trailing" id="VW0-5o-xb2"/>
+                                <constraint firstItem="fA9-MZ-amW" firstAttribute="leading" secondItem="bdh-MC-nFE" secondAttribute="leading" id="dg3-Ig-jmG"/>
+                                <constraint firstItem="T61-MX-87z" firstAttribute="leading" secondItem="bdh-MC-nFE" secondAttribute="leading" id="f3d-YZ-dqW"/>
+                                <constraint firstAttribute="trailing" secondItem="fA9-MZ-amW" secondAttribute="trailing" id="hwp-z2-GZZ"/>
+                                <constraint firstItem="T61-MX-87z" firstAttribute="top" secondItem="xt8-FB-SVS" secondAttribute="bottom" id="iHV-FC-uT5"/>
+                                <constraint firstItem="fA9-MZ-amW" firstAttribute="top" secondItem="bdh-MC-nFE" secondAttribute="top" id="sZs-KX-kpL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bdh-MC-nFE" secondAttribute="trailing" id="65M-TS-ClZ"/>
+                        <constraint firstItem="bdh-MC-nFE" firstAttribute="leading" secondItem="LjX-mM-hIh" secondAttribute="leading" id="8LM-er-azq"/>
+                        <constraint firstItem="bdh-MC-nFE" firstAttribute="top" secondItem="LjX-mM-hIh" secondAttribute="top" id="G7e-DY-trg"/>
+                        <constraint firstAttribute="bottom" secondItem="bdh-MC-nFE" secondAttribute="bottom" id="IWr-lO-eKL"/>
+                        <constraint firstItem="bdh-MC-nFE" firstAttribute="centerX" secondItem="LjX-mM-hIh" secondAttribute="centerX" id="KRq-Bb-6zu"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LjX-mM-hIh" secondAttribute="bottom" id="GPw-Ha-W0G"/>
+                <constraint firstItem="LjX-mM-hIh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="M8g-ei-hf6"/>
+                <constraint firstItem="LjX-mM-hIh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xzh-WQ-MZh"/>
+                <constraint firstAttribute="trailing" secondItem="LjX-mM-hIh" secondAttribute="trailing" id="yrK-bz-dbe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="364"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WX_detail1" width="414" height="417"/>
+        <image name="WX_detail2" width="414" height="495"/>
+        <image name="WX_detail3" width="414" height="504"/>
+    </resources>
+</document>

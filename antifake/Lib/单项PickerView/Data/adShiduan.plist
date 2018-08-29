@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>全部时段</string>
+	<string>00:00-02:00</string>
+	<string>02:00-04:00</string>
+	<string>04:00-06:00</string>
+	<string>06:00-08:00</string>
+	<string>08:00-10:00</string>
+	<string>10:00-12:00</string>
+	<string>12:00-14:00</string>
+	<string>14:00-16:00</string>
+	<string>16:00-18:00</string>
+	<string>18:00-20:00</string>
+	<string>20:00-22:00</string>
+	<string>22:00-14:00</string>
+</array>
+</plist>

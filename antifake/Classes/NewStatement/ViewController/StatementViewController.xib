@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatementViewController">
+            <connections>
+                <outlet property="dianhuaBtn" destination="Xn1-zv-Z3v" id="2kJ-Pt-eNI"/>
+                <outlet property="duanxinBtn" destination="Dp2-zh-Hyp" id="1az-cc-hw6"/>
+                <outlet property="shanxinBtn" destination="hGF-9Z-aTM" id="gl1-Tq-Vce"/>
+                <outlet property="tableView" destination="Lsf-uG-Bbg" id="0q2-EN-2Ot"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Statement_Banner" translatesAutoresizingMaskIntoConstraints="NO" id="gGF-Gr-zbC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="gGF-Gr-zbC" secondAttribute="height" multiplier="1240:255" id="3y3-dL-qBm"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lsf-uG-Bbg">
+                    <rect key="frame" x="0.0" y="137" width="375" height="530"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gjo-89-gzL"/>
+                        <outlet property="delegate" destination="-1" id="7hO-LW-KjI"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp2-zh-Hyp">
+                    <rect key="frame" x="0.0" y="77" width="125" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6pM-iC-tSe"/>
+                    </constraints>
+                    <state key="normal" title="短信">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionForType:" destination="-1" eventType="touchUpInside" id="5JU-pA-EKK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGF-9Z-aTM">
+                    <rect key="frame" x="125" y="77" width="125" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="wDP-0L-Aam"/>
+                    </constraints>
+                    <state key="normal" title="闪信">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionForType:" destination="-1" eventType="touchUpInside" id="Icn-NY-8Ir"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn1-zv-Z3v">
+                    <rect key="frame" x="250" y="77" width="125" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Ehj-iT-YNm"/>
+                    </constraints>
+                    <state key="normal" title="电话">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionForType:" destination="-1" eventType="touchUpInside" id="vXS-HB-ini"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hGF-9Z-aTM" firstAttribute="top" secondItem="gGF-Gr-zbC" secondAttribute="bottom" id="0jS-ft-Wvk"/>
+                <constraint firstItem="Xn1-zv-Z3v" firstAttribute="top" secondItem="gGF-Gr-zbC" secondAttribute="bottom" id="4h5-1o-oYa"/>
+                <constraint firstItem="Lsf-uG-Bbg" firstAttribute="top" secondItem="gGF-Gr-zbC" secondAttribute="bottom" constant="60" id="5PA-LS-E7R"/>
+                <constraint firstAttribute="trailing" secondItem="gGF-Gr-zbC" secondAttribute="trailing" id="6Dg-9h-tRw"/>
+                <constraint firstItem="hGF-9Z-aTM" firstAttribute="width" secondItem="Dp2-zh-Hyp" secondAttribute="width" id="CsH-pG-HgH"/>
+                <constraint firstAttribute="bottom" secondItem="Lsf-uG-Bbg" secondAttribute="bottom" id="KzI-Sy-cIQ"/>
+                <constraint firstItem="hGF-9Z-aTM" firstAttribute="leading" secondItem="Dp2-zh-Hyp" secondAttribute="trailing" id="Q9D-JI-WAt"/>
+                <constraint firstItem="Lsf-uG-Bbg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rny-m8-FSW"/>
+                <constraint firstItem="Xn1-zv-Z3v" firstAttribute="width" secondItem="hGF-9Z-aTM" secondAttribute="width" id="VPU-r1-h9V"/>
+                <constraint firstItem="gGF-Gr-zbC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wbh-wC-3Bu"/>
+                <constraint firstAttribute="trailing" secondItem="Lsf-uG-Bbg" secondAttribute="trailing" id="byv-hw-63b"/>
+                <constraint firstItem="Dp2-zh-Hyp" firstAttribute="top" secondItem="gGF-Gr-zbC" secondAttribute="bottom" id="ek1-nZ-yEQ"/>
+                <constraint firstItem="Dp2-zh-Hyp" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:3" id="iIe-L7-ETS"/>
+                <constraint firstItem="Dp2-zh-Hyp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kne-8g-Vgf"/>
+                <constraint firstItem="Xn1-zv-Z3v" firstAttribute="leading" secondItem="hGF-9Z-aTM" secondAttribute="trailing" id="pLG-4B-HmJ"/>
+                <constraint firstItem="gGF-Gr-zbC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sxZ-5D-WiO"/>
+            </constraints>
+            <point key="canvasLocation" x="-192" y="-20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Statement_Banner" width="413" height="85"/>
+    </resources>
+</document>

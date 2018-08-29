@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeNewViewController">
+            <connections>
+                <outlet property="homeView" destination="i5M-Pr-FkT" id="nAt-Cg-8e4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="HomeNewView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_BG" translatesAutoresizingMaskIntoConstraints="NO" id="P3F-8S-anm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeGB2" translatesAutoresizingMaskIntoConstraints="NO" id="Wuf-5P-Sev">
+                    <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Wuf-5P-Sev" secondAttribute="height" id="TFR-Ly-2CI"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auv-55-ibN">
+                    <rect key="frame" x="135.5" y="281" width="105" height="105"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Auv-55-ibN" secondAttribute="height" multiplier="1:1" id="APC-Ry-OZM"/>
+                    </constraints>
+                    <state key="normal" image="Home_Center"/>
+                    <state key="selected" image="Home_Center"/>
+                    <state key="highlighted" image="Home_Center"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="P3F-8S-anm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2g8-4h-hnV"/>
+                <constraint firstItem="Auv-55-ibN" firstAttribute="width" secondItem="Wuf-5P-Sev" secondAttribute="width" multiplier="0.28" id="EQh-NW-Nub"/>
+                <constraint firstAttribute="trailing" secondItem="P3F-8S-anm" secondAttribute="trailing" id="F2X-iR-DgQ"/>
+                <constraint firstItem="Wuf-5P-Sev" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GKn-e3-cHm"/>
+                <constraint firstItem="Wuf-5P-Sev" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="J2V-r5-V0g"/>
+                <constraint firstItem="P3F-8S-anm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LPu-wQ-LRP"/>
+                <constraint firstAttribute="bottom" secondItem="P3F-8S-anm" secondAttribute="bottom" id="UtG-MF-dip"/>
+                <constraint firstItem="Auv-55-ibN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zuk-Kf-T8d"/>
+                <constraint firstAttribute="trailing" secondItem="Wuf-5P-Sev" secondAttribute="trailing" id="bpD-85-ipf"/>
+                <constraint firstItem="Auv-55-ibN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fDW-kH-GXk"/>
+                <constraint firstItem="Wuf-5P-Sev" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ziH-F6-b1M"/>
+            </constraints>
+            <connections>
+                <outlet property="centerBtn" destination="Auv-55-ibN" id="tQn-6g-Z6I"/>
+                <outlet property="homeDXBtn" destination="rrq-X1-2vX" id="7Zy-WX-JTg"/>
+                <outlet property="home_DSPBtn" destination="4d6-We-cJa" id="Np5-JW-gfE"/>
+                <outlet property="home_SXBtn" destination="0TW-O4-vZk" id="jNG-3u-u8Y"/>
+                <outlet property="home_dianhuaBtn" destination="oEX-Hv-taK" id="JBM-1x-udy"/>
+                <outlet property="home_duanxinBtn" destination="x0x-7C-wKo" id="lTz-UU-nZD"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oEX-Hv-taK">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="Home_DH"/>
+            <state key="selected" image="Home_DH"/>
+            <state key="highlighted" image="Home_DH"/>
+            <connections>
+                <action selector="actionForDianhua:" destination="-1" eventType="touchUpInside" id="77g-e4-krq"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="-244"/>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x0x-7C-wKo">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="Home_DX"/>
+            <state key="disabled" image="Home_DX"/>
+            <state key="selected" image="Home_DX"/>
+            <state key="highlighted" image="Home_DX"/>
+            <connections>
+                <action selector="actionForDuanxin:" destination="-1" eventType="touchUpInside" id="3vf-qG-pXD"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="-108"/>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4d6-We-cJa">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="Home_DSP"/>
+            <state key="disabled" image="Home_DSP"/>
+            <state key="selected" image="Home_DSP"/>
+            <state key="highlighted" image="Home_DSP"/>
+            <connections>
+                <action selector="actioNForDSP:" destination="-1" eventType="touchUpInside" id="Khv-pK-3rI"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="34"/>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0TW-O4-vZk">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="Home_SX"/>
+            <state key="disabled" image="Home_SX"/>
+            <state key="selected" image="Home_SX"/>
+            <state key="highlighted" image="Home_SX"/>
+            <connections>
+                <action selector="actionForSanxin:" destination="-1" eventType="touchUpInside" id="rD4-Y2-QCQ"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="183"/>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rrq-X1-2vX">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="Home_WX"/>
+            <state key="disabled" image="Home_WX"/>
+            <state key="selected" image="Home_WX"/>
+            <state key="highlighted" image="Home_WX"/>
+            <connections>
+                <action selector="actionForWeixin:" destination="-1" eventType="touchUpInside" id="IQw-ha-6Y9"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="347"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="HomeGB2" width="414" height="414"/>
+        <image name="Home_BG" width="414" height="736"/>
+        <image name="Home_Center" width="119" height="119"/>
+        <image name="Home_DH" width="72" height="72"/>
+        <image name="Home_DSP" width="72" height="72"/>
+        <image name="Home_DX" width="72" height="72"/>
+        <image name="Home_SX" width="72" height="72"/>
+        <image name="Home_WX" width="72" height="72"/>
+    </resources>
+</document>

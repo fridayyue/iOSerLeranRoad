@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuyExplainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1779"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HY-sw-otQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1779"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxA-47-HAP">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="1779"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈广告支持排期购买和竞价购买两种购买方式，按曝光次数收费。两种购买方式所对应的曝光单价与服务标准如下。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18Y-Lf-fxY">
+                                    <rect key="frame" x="15" y="10" width="344" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Vn-BN-ZBK">
+                                    <rect key="frame" x="15" y="49" width="5" height="15"/>
+                                    <color key="backgroundColor" red="0.1176470588" green="0.52549019610000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="jcp-PZ-zyH"/>
+                                        <constraint firstAttribute="width" constant="5" id="trX-5m-58W"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图文广告" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fa-vt-wqC">
+                                    <rect key="frame" x="25" y="50" width="334" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS2-d2-Nbm">
+                                    <rect key="frame" x="15" y="74.5" width="344" height="1704.5"/>
+                                    <mutableString key="text">朋友圈广告支持 排期购买 和 竞价购买 两种购买方式，按 曝光次数 收费。两种购买方式所对应的 曝光单价 与 服务标准 如下。
+图文广告
+除朋友圈本地推广广告外，其他图文广告均支持排期购买和竞价购买。朋友圈本地推广广告仅支持竞价购买。
+1. 排期购买
+排期购买的特点是可提前 1-28 天锁定曝光量，同时提前冻结账户里所预定排期的账户金额，是一种保价、保量的合约购买方式。 通过排期购买的朋友圈图文广告，单次投放最低预算为 5 万元，曝光单价由广告投放地域决定。投放地域目前主要分成三档：核心城市、重点城市和普通城市，各档所包含的具体城市及对应的曝光单价如下所示：
+- 核心城市：150 元/千次曝光
+包含北京和上海。 例如：某广告主定向北京市投放朋友圈图文广告，预算 30 万元，则该广告主的广告至少可获得 200 万次曝光。
+- 重点城市：100 元/千次曝光
+包含广州、成都、深圳、杭州、武汉、苏州、重庆、南京、天津、西安、沈阳、长沙、青岛、宁波、郑州、大连、厦门、济南、哈尔滨、福州等 20 个高活跃城市。 例如：某广告主定向广州、深圳两个城市投放朋友圈图文广告，预算 30 万元，则该广告主的广告至少在两个城市总共可获得 300 万次曝光。
+- 普通城市：50 元/千次曝光
+包含除以上22个城市之外的其他城市。 例如：某广告主定向东莞、漳州两个城市投放朋友圈图文广告，预算 30 万元，则该广告主的广告至少在两个城市总共可获得 600 万次曝光。
+2. 竞价购买
+竞价购买方式适合需要灵活调整广告设置、不断优化广告投放效果的广告主。确定投放人群及日预算后，广告主可以对广告曝光进行出价，通过实时竞价的方式与其他广告主竞争从而获取广告曝光。 竞价购买的出价范围按投放地域分成三档：核心城市、重点城市和普通城市。各档城市所对应的出价范围如下所示：
+- 核心城市：广告主对曝光进行出价，出价范围100~300元/千次曝光
+包含北京和上海。 例如：某广告主定向北京市投放朋友圈图文广告，并设置出价为120元/千次曝光、日预算3万元，那么实际曝光单价不会超过120元/千次曝光，且当日的广告消耗不会超过3万元。
+- 重点城市：广告主对曝光进行出价，出价范围60~200元/千次曝光
+包含广州、成都、深圳、杭州、武汉、苏州、重庆、南京、天津、西安、沈阳、长沙、青岛、宁波、郑州、大连、厦门、济南、哈尔滨、福州等 20 个高活跃城市。 例如：某广告主定向广州、深圳两个地区投放朋友圈图文广告，并设置出价为80元/千次曝光、日预算3万元，那么实际曝光单价不会超过80元/千次曝光，且当日的广告消耗不会超过3万元。
+- 普通城市：广告主自由设置出价，最低出价为30元/千次曝光
+包含除以上 22 个城市之外的其他城市。 例如：某广告主定向东莞、漳州两个城市投放朋友圈图文广告，并设置竞价出价为 30 元/千次曝光、日预算 3 万元，那么实际曝光单价不会超过 30 元/千次曝光，且当日的广告消耗不会超过 3 万元。
+视频广告
+除朋友圈本地推广广告外，其他视频广告均支持排期购买和竞价购买。朋友圈本地推广广告仅支持竞价购买。
+1. 排期购买
+排期购买的特点是可提前 1-28 天锁定曝光量，同时提前冻结账户里所预定排期的账户金额，是一种保价、保量的合约购买方式。 通过排期购买的朋友圈视频广告，单次投放最低预算为 5 万元，曝光单价由广告投放地域决定。投放地域目前主要分成三档：核心城市、重点城市和普通城市，各档所包含的具体城市及对应的曝光单价如下所示：
+- 核心城市：180 元/千次曝光
+包含北京和上海。 例如：某广告主定向北京市投放朋友圈视频广告，预算18万元，则该广告主的广告至少可在北京市获得 100 万次曝光。
+- 重点城市：120 元/千次曝光
+包含广州、成都、深圳、杭州、武汉、苏州、重庆、南京、天津、西安、沈阳、长沙、青岛、宁波、郑州、大连、厦门、济南、哈尔滨、福州等 20 个高活跃城市。 例如：某广告主定向广州、深圳两个城市投放朋友圈视频广告，预算 18 万元，则该广告主的广告至少在两个城市总共可获得 150 万次曝光。
+- 普通城市：60 元/千次曝光
+包含除以上 22 个城市之外的其他城市。 例如：某广告主定向东莞、漳州两个城市投放朋友圈视频广告，预算 18 万元，则该广告主的广告至少在两个城市总共可获得 300 万次曝光。
+2. 竞价购买
+竞价购买方式适合需要灵活调整广告设置、不断优化广告投放效果的广告主。确定投放人群及日预算后，广告主可以对广告曝光进行出价，通过实时竞价的方式与其他广告主竞争从而获取广告曝光。 竞价购买的出价范围按投放地域分成三档：核心城市、重点城市和普通城市。各档城市所对应的出价范围如下所示：
+- 核心城市：广告主对曝光进行出价，出价范围100~300元/千次曝光
+包含北京和上海。 例如：某广告主定向北京市投放朋友圈视频广告，并设置出价为120元/千次曝光、日预算3万元，那么实际曝光单价不会超过120元/千次曝光，且当日的广告消耗不会超过3万元。
+- 重点城市：广告主对曝光进行出价，出价范围60~200元/千次曝光
+包含广州、成都、深圳、杭州、武汉、苏州、重庆、南京、天津、西安、沈阳、长沙、青岛、宁波、郑州、大连、厦门、济南、哈尔滨、福州等 20 个高活跃城市。 例如：某广告主定向广州、深圳两个地区投放朋友圈视频广告，并设置出价为80元/千次曝光、日预算3万元，那么实际曝光单价不会超过80元/千次曝光，且当日的广告消耗不会超过3万元。
+- 普通城市：广告主自由设置出价，最低出价为30元/千次曝光
+包含除以上 22 个城市之外的其他城市。 例如：某广告主定向东莞、漳州两个城市投放朋友圈视频广告，并设置竞价出价为 30 元/千次曝光、日预算 3 万元，那么实际曝光单价不会超过 30 元/千次曝光，且当日的广告消耗不会超过 3 万元。
+VIP客户特殊支持：单次投放金额 100 万元及以上
+	•	支持外层配置多张图片（3/4/6张）；
+	•	详情页支持使用自定义H5链接（须符合微信广告开发及测试规范）；
+	•	特殊定向挖掘服务。
+</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="IS2-d2-Nbm" firstAttribute="top" secondItem="9Fa-vt-wqC" secondAttribute="bottom" constant="10" id="2wj-2z-HQF"/>
+                                <constraint firstItem="8Vn-BN-ZBK" firstAttribute="top" secondItem="18Y-Lf-fxY" secondAttribute="bottom" constant="10" id="FAN-xD-moA"/>
+                                <constraint firstItem="18Y-Lf-fxY" firstAttribute="top" secondItem="jxA-47-HAP" secondAttribute="top" constant="10" id="GRn-fT-ubG"/>
+                                <constraint firstAttribute="trailing" secondItem="18Y-Lf-fxY" secondAttribute="trailing" constant="15" id="S8D-CF-XWt"/>
+                                <constraint firstAttribute="bottom" secondItem="IS2-d2-Nbm" secondAttribute="bottom" id="UVn-Xz-N0e"/>
+                                <constraint firstAttribute="trailing" secondItem="IS2-d2-Nbm" secondAttribute="trailing" constant="15" id="WUG-1q-TVU"/>
+                                <constraint firstAttribute="trailing" secondItem="9Fa-vt-wqC" secondAttribute="trailing" constant="15" id="btd-64-2j8"/>
+                                <constraint firstItem="IS2-d2-Nbm" firstAttribute="leading" secondItem="8Vn-BN-ZBK" secondAttribute="leading" id="cET-z5-gap"/>
+                                <constraint firstItem="8Vn-BN-ZBK" firstAttribute="leading" secondItem="18Y-Lf-fxY" secondAttribute="leading" id="cew-Cz-kAn"/>
+                                <constraint firstItem="9Fa-vt-wqC" firstAttribute="leading" secondItem="8Vn-BN-ZBK" secondAttribute="trailing" constant="5" id="iQZ-eW-dDd"/>
+                                <constraint firstItem="9Fa-vt-wqC" firstAttribute="centerY" secondItem="8Vn-BN-ZBK" secondAttribute="centerY" id="whH-5h-gaW"/>
+                                <constraint firstItem="18Y-Lf-fxY" firstAttribute="leading" secondItem="jxA-47-HAP" secondAttribute="leading" constant="15" id="ygr-Cf-1OD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jxA-47-HAP" secondAttribute="trailing" id="FEG-ii-qHh"/>
+                        <constraint firstItem="jxA-47-HAP" firstAttribute="leading" secondItem="0HY-sw-otQ" secondAttribute="leading" id="Osm-Ai-Zwl"/>
+                        <constraint firstItem="jxA-47-HAP" firstAttribute="centerX" secondItem="0HY-sw-otQ" secondAttribute="centerX" id="Yxe-vZ-E2h"/>
+                        <constraint firstItem="jxA-47-HAP" firstAttribute="top" secondItem="0HY-sw-otQ" secondAttribute="top" id="gjr-tX-Kr9"/>
+                        <constraint firstAttribute="bottom" secondItem="jxA-47-HAP" secondAttribute="bottom" id="tVf-yN-Ehd"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0HY-sw-otQ" secondAttribute="trailing" id="30x-YS-vlS"/>
+                <constraint firstItem="0HY-sw-otQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HGn-08-nt1"/>
+                <constraint firstAttribute="bottom" secondItem="0HY-sw-otQ" secondAttribute="bottom" id="dQk-B6-hxA"/>
+                <constraint firstItem="0HY-sw-otQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gt8-Br-aWg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="176.5"/>
+        </view>
+    </objects>
+</document>

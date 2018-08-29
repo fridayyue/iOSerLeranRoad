@@ -1,0 +1,128 @@
+//
+//  PrefixHeader.h
+//  happymoney
+//
+//  Created by Zach on 2017/10/9.
+//  Copyright © 2017年 Zach. All rights reserved.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+
+
+
+#ifdef DEBUG // 开发阶段-DEBUG阶段:使用Log
+#define ZFLog(...) NSLog(__VA_ARGS__)
+#else // 发布阶段-上线阶段:移除Log
+#define ZFLog(...)
+#endif
+
+
+
+
+#define ZFLogFunc ZFLog(@"%s", __func__);
+
+
+
+
+#define ZFARGBColor(a, r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define RGBACOLOR(R,G,B,AL)      [UIColor colorWithRed:(R)/255.0f green:(G)/255.0f blue:(B)/255.0f alpha:(AL)]
+
+/**
+ 根据十六进制色值设置颜色，alpha默认是1.0f
+ 
+ @param hex 十六进制色值
+ @return 返回UIColor
+ */
+#define HEX_COLOR(hex)           HEX_COLORVALUES(hex,1.0f)
+
+/**
+ 根据十六进制色值设置颜色
+ 
+ @param hex 十六进制色值
+ @param a alpha通道值
+ @return 返回UIColor
+ */
+#define HEX_COLORVALUES(hex,a)    ([UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:a])
+
+#define ZFColor(r, g, b) ZFARGBColor(255, (r), (g), (b))
+
+
+#define ZFNavBGColor ZFColor(68, 169, 233)
+
+
+#define ZFTabBarNormalColor ZFGrayColor(179)
+
+
+#define ZFTabBarSelectedColor ZFColor(45, 123, 236)
+
+
+#define ZFGrayColor(v) ZFColor((v), (v), (v))
+
+
+#define ZFGrayBgColor ZFGrayColor(247)
+
+
+#define ZFGrayTextColor ZFGrayColor(150)
+
+
+#define ZFRandomColor ZFColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+
+#define ZFWeakSelf __weak typeof(self) weakSelf = self;
+
+// 将数据写到桌面的plist/Users/chengrui/Desktop/NewProgram/CooperativeWorking/CooperativeWorking/CooperativeWorking/Classes/Contacts/Controller
+#define ZFWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/chengrui/Desktop/%@.plist", filename] atomically:YES];
+
+
+
+
+#define ZFScreenH [UIScreen mainScreen].bounds.size.height
+
+#define ZFScreenW [UIScreen mainScreen].bounds.size.width
+
+
+
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+#define ZFSTATUS_BAR_HEIGHT (iPhoneX ? 44.f : 20.f)
+
+#define ZFNAVIGATION_BAR_HEIGHT (iPhoneX ? 88.f : 64.f)
+
+#define ZFTAB_BAR_HEIGHT (iPhoneX ? (49.f+34.f) : 49.f)
+
+#define ZFHOME_INDICATOR_HEIGHT (iPhoneX ? 34.f : 0.f)
+
+
+#ifdef DEBUG
+#define CLog(format, ...)  NSLog(format, ## __VA_ARGS__)
+#else
+#define CLog(format,...)
+#endif
+
+#define ShareAppDelegate   (AppDelegate *)[[UIApplication sharedApplication] delegate]
+#define TotalBlue       HEX_COLOR(0x0e86ff)
+//#import "ZFConfig.h"
+
+/************* 头文件 *************/
+#import "NetMacros.h"
+#import "Judge.h"
+#import "Help.h"
+#import "NetWorking.h"
+#import "UserManger.h"
+#import "UIAlertView+Block.h"
+#import <Masonry.h>
+#import "ZFNetTool.h"
+#import "UIView+ZFExetension.h"
+
+#import <SVProgressHUD.h>
+
+#import "ZFConst.h"
+
+
+
+#define BasicURL  @"http://flb.huarenpay.com/"
+
+
+#endif /* PrefixHeader_h */
